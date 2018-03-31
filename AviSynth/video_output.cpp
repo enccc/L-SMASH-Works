@@ -423,7 +423,7 @@ static int as_check_dr_available
     enum AVPixelFormat pixel_format
  )
 {
-    if( !(ctx->codec->capabilities & CODEC_CAP_DR1) )
+    if( !(ctx->codec->capabilities & AV_CODEC_CAP_DR1) )
         return 0;
     static enum AVPixelFormat dr_support_pix_fmt[] =
     {
